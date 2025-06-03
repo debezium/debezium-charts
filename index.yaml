@@ -18,6 +18,14 @@ entries:
     - https://github.com/debezium/debezium-operator/releases/download/v3.2.0.Alpha1/debezium-operator-3.2.0-alpha1.tgz
     version: 3.2.0-alpha1
   - apiVersion: v2
+    appVersion: 3.1.2-final
+    created: "2025-06-03T07:16:01.68003243-04:00"
+    digest: ffa7f684af8f88bfe159518540d7f2e07dfbe52b7b88352a2a769b6e60289a56
+    name: debezium-operator
+    urls:
+    - https://github.com/debezium/debezium-operator/releases/download/v3.1.2.Final/debezium-operator-3.1.2-final.tgz
+    version: 3.1.2-final
+  - apiVersion: v2
     appVersion: 3.1.1-final
     created: "2025-04-23T07:56:41.579317308-04:00"
     digest: cd76893a735faa54f06dfc34ec621827732aa516b5621484c8775c2fdc8d2db2
@@ -201,6 +209,29 @@ entries:
     - https://github.com/debezium/debezium-platform/releases/download/v3.2.0.Alpha1/debezium-platform-3.2.0-alpha1.tgz
     version: 3.2.0-alpha1
   - apiVersion: v2
+    appVersion: 3.1.2-final
+    created: "2025-06-03T07:16:02.238699747-04:00"
+    dependencies:
+    - name: debezium-operator
+      repository: https://charts.debezium.io
+      version: 3.1.2-final
+    - condition: database.enabled
+      name: database
+      repository: ""
+      version: 3.1.2-final
+    description: Debezium Platform
+    digest: 17a407dbf7efa838ed8f68739ffb2a45605a567c631dadd1fef3015578830f21
+    home: https://github.com/debezium/debezium-platform
+    keywords:
+    - debezium
+    - cdc
+    name: debezium-platform
+    sources:
+    - https://github.com/debezium/debezium-platform
+    urls:
+    - https://github.com/debezium/debezium-platform/releases/download/v3.1.2.Final/debezium-platform-3.1.2-final.tgz
+    version: 3.1.2-final
+  - apiVersion: v2
     appVersion: 3.1.1-final
     created: "2025-04-23T07:56:42.181731995-04:00"
     dependencies:
@@ -292,4 +323,4 @@ entries:
     urls:
     - https://github.com/debezium/debezium-platform/releases/download/v3.1.0.Beta1/debezium-platform-3.1.0-beta1.tgz
     version: 3.1.0-beta1
-generated: "2025-05-29T13:35:25.33959987-04:00"
+generated: "2025-06-03T07:16:02.237181894-04:00"
