@@ -26,6 +26,14 @@ entries:
     - https://github.com/debezium/debezium-operator/releases/download/v3.2.0.Alpha1/debezium-operator-3.2.0-alpha1.tgz
     version: 3.2.0-alpha1
   - apiVersion: v2
+    appVersion: 3.1.3-final
+    created: "2025-06-25T01:24:29.363864586-04:00"
+    digest: e52ee17903eaa5e971653007438619f0ade53f93aadfc47848121df516f02fef
+    name: debezium-operator
+    urls:
+    - https://github.com/debezium/debezium-operator/releases/download/v3.1.3.Final/debezium-operator-3.1.3-final.tgz
+    version: 3.1.3-final
+  - apiVersion: v2
     appVersion: 3.1.2-final
     created: "2025-06-03T07:16:01.68003243-04:00"
     digest: ffa7f684af8f88bfe159518540d7f2e07dfbe52b7b88352a2a769b6e60289a56
@@ -240,6 +248,29 @@ entries:
     - https://github.com/debezium/debezium-platform/releases/download/v3.2.0.Alpha1/debezium-platform-3.2.0-alpha1.tgz
     version: 3.2.0-alpha1
   - apiVersion: v2
+    appVersion: 3.1.3-final
+    created: "2025-06-25T01:24:29.949575996-04:00"
+    dependencies:
+    - name: debezium-operator
+      repository: https://charts.debezium.io
+      version: 3.1.3-final
+    - condition: database.enabled
+      name: database
+      repository: ""
+      version: 3.1.3-final
+    description: Debezium Platform
+    digest: 6f49d6b13639ec565af25d272c20734b1db76bcc08572c014334ee17081ae78e
+    home: https://github.com/debezium/debezium-platform
+    keywords:
+    - debezium
+    - cdc
+    name: debezium-platform
+    sources:
+    - https://github.com/debezium/debezium-platform
+    urls:
+    - https://github.com/debezium/debezium-platform/releases/download/v3.1.3.Final/debezium-platform-3.1.3-final.tgz
+    version: 3.1.3-final
+  - apiVersion: v2
     appVersion: 3.1.2-final
     created: "2025-06-03T07:16:02.238699747-04:00"
     dependencies:
@@ -354,4 +385,4 @@ entries:
     urls:
     - https://github.com/debezium/debezium-platform/releases/download/v3.1.0.Beta1/debezium-platform-3.1.0-beta1.tgz
     version: 3.1.0-beta1
-generated: "2025-06-09T13:39:16.117826887-04:00"
+generated: "2025-06-25T01:24:29.946720665-04:00"
