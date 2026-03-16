@@ -26,6 +26,14 @@ entries:
     - https://github.com/debezium/debezium-operator/releases/download/v3.5.0.Alpha1/debezium-operator-3.5.0-alpha1.tgz
     version: 3.5.0-alpha1
   - apiVersion: v2
+    appVersion: 3.4.1
+    created: "2026-03-16T02:17:52.980610495-04:00"
+    digest: cffde8e1dc6b70bfda8bbb9a0da9413231870563631184d81c47429596a679c1
+    name: debezium-operator
+    urls:
+    - https://github.com/debezium/debezium-operator/releases/download/v3.4.1.Final/debezium-operator-3.4.1.tgz
+    version: 3.4.1
+  - apiVersion: v2
     appVersion: 3.4.0
     created: "2025-12-18T08:33:02.718735274-05:00"
     digest: 05cad4d07971110c9e2ff1a4f562e140ba41d6d93689d123fd57a600529ba620
@@ -383,6 +391,29 @@ entries:
     urls:
     - https://github.com/debezium/debezium-platform/releases/download/v3.5.0.Alpha1/debezium-platform-3.5.0-alpha1.tgz
     version: 3.5.0-alpha1
+  - apiVersion: v2
+    appVersion: 3.4.1
+    created: "2026-03-16T02:17:53.545316976-04:00"
+    dependencies:
+    - name: debezium-operator
+      repository: https://charts.debezium.io
+      version: 3.4.1
+    - condition: database.enabled
+      name: database
+      repository: ""
+      version: 3.4.1
+    description: Debezium Platform
+    digest: e0e9ed552cc0a36a808269bcdf8d54cda5973308b4b0e3ebd8b7633e2579e508
+    home: https://github.com/debezium/debezium-platform
+    keywords:
+    - debezium
+    - cdc
+    name: debezium-platform
+    sources:
+    - https://github.com/debezium/debezium-platform
+    urls:
+    - https://github.com/debezium/debezium-platform/releases/download/v3.4.1.Final/debezium-platform-3.4.1.tgz
+    version: 3.4.1
   - apiVersion: v2
     appVersion: 3.4.0
     created: "2025-12-18T08:33:03.300698807-05:00"
@@ -912,4 +943,4 @@ entries:
     urls:
     - https://github.com/debezium/debezium-platform/releases/download/v3.1.0.Beta1/debezium-platform-3.1.0-beta1.tgz
     version: 3.1.0-beta1
-generated: "2026-03-16T02:17:27.801093091-04:00"
+generated: "2026-03-16T02:17:53.543309617-04:00"
