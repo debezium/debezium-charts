@@ -2,6 +2,14 @@ apiVersion: v1
 entries:
   debezium-operator:
   - apiVersion: v2
+    appVersion: 3.6.0-alpha1
+    created: "2026-04-23T03:30:02.361839383-04:00"
+    digest: 30807d4a42d79be4ca59cfabdcccf89a52c23c9fabd4c9553a580ae843f0c470
+    name: debezium-operator
+    urls:
+    - https://github.com/debezium/debezium-operator/releases/download/v3.6.0.Alpha1/debezium-operator-3.6.0-alpha1.tgz
+    version: 3.6.0-alpha1
+  - apiVersion: v2
     appVersion: 3.5.0
     created: "2026-03-31T06:31:18.705237646-04:00"
     digest: 2ad3e3c5fcbf1f205ae092022c17964133b580757eb123b0c1e89b26074a17ea
@@ -354,6 +362,30 @@ entries:
     - https://github.com/debezium/debezium-operator-manifests/releases/download/debezium-operator-2.5.1-final/debezium-operator-2.5.1-final.tgz
     version: 2.5.1-final
   debezium-platform:
+  - apiVersion: v2
+    appVersion: 3.6.0-alpha1
+    created: "2026-04-23T03:30:02.919366902-04:00"
+    dependencies:
+    - condition: debezium-operator.enabled
+      name: debezium-operator
+      repository: https://charts.debezium.io
+      version: 3.6.0-alpha1
+    - condition: database.enabled
+      name: database
+      repository: ""
+      version: 3.6.0-alpha1
+    description: Debezium Platform
+    digest: 47b9e79d6e164365b85f3e09ea1d39070c1031db546ef4316abb6e557f52d937
+    home: https://github.com/debezium/debezium-platform
+    keywords:
+    - debezium
+    - cdc
+    name: debezium-platform
+    sources:
+    - https://github.com/debezium/debezium-platform
+    urls:
+    - https://github.com/debezium/debezium-platform/releases/download/v3.6.0.Alpha1/debezium-platform-3.6.0-alpha1.tgz
+    version: 3.6.0-alpha1
   - apiVersion: v2
     appVersion: 3.5.0
     created: "2026-03-31T06:31:19.268773265-04:00"
@@ -1067,4 +1099,4 @@ entries:
     urls:
     - https://github.com/debezium/debezium-platform/releases/download/v3.1.0.Beta1/debezium-platform-3.1.0-beta1.tgz
     version: 3.1.0-beta1
-generated: "2026-03-31T06:31:19.266925796-04:00"
+generated: "2026-04-23T03:30:02.916691087-04:00"
