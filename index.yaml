@@ -3,8 +3,8 @@ entries:
   debezium-operator:
   - apiVersion: v2
     appVersion: 3.6.0-alpha1
-    created: "2026-04-23T03:38:57.931302898-04:00"
-    digest: 6e415a6a8a3f475a09c88f2192f89f55317f34123c38698c4e6a08d9ef4c763f
+    created: "2026-04-23T03:46:32.496367457-04:00"
+    digest: e7c60a924ebd58411c36075b2db7de8e25a0f41dbeb80fd25035f57d0311726b
     name: debezium-operator
     urls:
     - https://github.com/debezium/debezium-operator/releases/download/v3.6.0.Alpha1/debezium-operator-3.6.0-alpha1.tgz
@@ -364,7 +364,7 @@ entries:
   debezium-platform:
   - apiVersion: v2
     appVersion: 3.6.0-alpha1
-    created: "2026-04-23T03:38:58.485029862-04:00"
+    created: "2026-04-23T03:46:33.051092974-04:00"
     dependencies:
     - condition: debezium-operator.enabled
       name: debezium-operator
@@ -375,7 +375,7 @@ entries:
       repository: ""
       version: 3.6.0-alpha1
     description: Debezium Platform
-    digest: b23e9040306230c9c9c9c9ce29964e6d0f0624bcc2b7a6ab959b1703e5227305
+    digest: ba9d23b72517bf6c1447ee8795cfc0e4e973d2934a1da29eff8eb46800cd2a78
     home: https://github.com/debezium/debezium-platform
     keywords:
     - debezium
@@ -1099,4 +1099,4 @@ entries:
     urls:
     - https://github.com/debezium/debezium-platform/releases/download/v3.1.0.Beta1/debezium-platform-3.1.0-beta1.tgz
     version: 3.1.0-beta1
-generated: "2026-04-23T03:38:58.483366794-04:00"
+generated: "2026-04-23T03:46:33.048862746-04:00"
