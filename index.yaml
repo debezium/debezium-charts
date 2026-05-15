@@ -2,6 +2,14 @@ apiVersion: v1
 entries:
   debezium-operator:
   - apiVersion: v2
+    appVersion: 3.6.0-alpha2
+    created: "2026-05-15T15:11:09.682911983-04:00"
+    digest: 36439fd7da7820dc9c3b0b6dbd2fca6d98f49418c5e93c93944bd5e2dbae7882
+    name: debezium-operator
+    urls:
+    - https://github.com/debezium/debezium-operator/releases/download/v3.6.0.Alpha2/debezium-operator-3.6.0-alpha2.tgz
+    version: 3.6.0-alpha2
+  - apiVersion: v2
     appVersion: 3.6.0-alpha1
     created: "2026-04-23T04:04:24.99904194-04:00"
     digest: b12f7b3733cd73334113808df28f0537d12e294d9c5140a428535b3a28e3d6cd
@@ -370,6 +378,30 @@ entries:
     - https://github.com/debezium/debezium-operator-manifests/releases/download/debezium-operator-2.5.1-final/debezium-operator-2.5.1-final.tgz
     version: 2.5.1-final
   debezium-platform:
+  - apiVersion: v2
+    appVersion: 3.6.0-alpha2
+    created: "2026-05-15T15:11:10.228800853-04:00"
+    dependencies:
+    - condition: debezium-operator.enabled
+      name: debezium-operator
+      repository: https://charts.debezium.io
+      version: 3.6.0-alpha2
+    - condition: database.enabled
+      name: database
+      repository: ""
+      version: 3.6.0-alpha2
+    description: Debezium Platform
+    digest: c065cdcf88ce6e8f9a1da7bcfc3860ff85012147a2636b2987f32fbedd9d1f3d
+    home: https://github.com/debezium/debezium-platform
+    keywords:
+    - debezium
+    - cdc
+    name: debezium-platform
+    sources:
+    - https://github.com/debezium/debezium-platform
+    urls:
+    - https://github.com/debezium/debezium-platform/releases/download/v3.6.0.Alpha2/debezium-platform-3.6.0-alpha2.tgz
+    version: 3.6.0-alpha2
   - apiVersion: v2
     appVersion: 3.6.0-alpha1
     created: "2026-04-23T04:04:25.556918618-04:00"
@@ -1131,4 +1163,4 @@ entries:
     urls:
     - https://github.com/debezium/debezium-platform/releases/download/v3.1.0.Beta1/debezium-platform-3.1.0-beta1.tgz
     version: 3.1.0-beta1
-generated: "2026-05-14T13:19:51.991858004-04:00"
+generated: "2026-05-15T15:11:10.225721683-04:00"
