@@ -2,6 +2,14 @@ apiVersion: v1
 entries:
   debezium-operator:
   - apiVersion: v2
+    appVersion: 3.6.0-beta1
+    created: "2026-05-30T02:08:02.940531318-04:00"
+    digest: 39ff6e5fd7fbadb7ca62845e32617ccfca47fa4a61d907ea55ef7041d14b3610
+    name: debezium-operator
+    urls:
+    - https://github.com/debezium/debezium-operator/releases/download/v3.6.0.Beta1/debezium-operator-3.6.0-beta1.tgz
+    version: 3.6.0-beta1
+  - apiVersion: v2
     appVersion: 3.6.0-alpha2
     created: "2026-05-15T15:11:09.682911983-04:00"
     digest: 36439fd7da7820dc9c3b0b6dbd2fca6d98f49418c5e93c93944bd5e2dbae7882
@@ -378,6 +386,30 @@ entries:
     - https://github.com/debezium/debezium-operator-manifests/releases/download/debezium-operator-2.5.1-final/debezium-operator-2.5.1-final.tgz
     version: 2.5.1-final
   debezium-platform:
+  - apiVersion: v2
+    appVersion: 3.6.0-beta1
+    created: "2026-05-30T02:08:03.508129768-04:00"
+    dependencies:
+    - condition: debezium-operator.enabled
+      name: debezium-operator
+      repository: https://charts.debezium.io
+      version: 3.6.0-beta1
+    - condition: database.enabled
+      name: database
+      repository: ""
+      version: 3.6.0-beta1
+    description: Debezium Platform
+    digest: f348dcd4311bfe988fb3907f83588332e4bc7a61416a6f45b216c21174ea708c
+    home: https://github.com/debezium/debezium-platform
+    keywords:
+    - debezium
+    - cdc
+    name: debezium-platform
+    sources:
+    - https://github.com/debezium/debezium-platform
+    urls:
+    - https://github.com/debezium/debezium-platform/releases/download/v3.6.0.Beta1/debezium-platform-3.6.0-beta1.tgz
+    version: 3.6.0-beta1
   - apiVersion: v2
     appVersion: 3.6.0-alpha2
     created: "2026-05-15T15:11:10.228800853-04:00"
@@ -1163,4 +1195,4 @@ entries:
     urls:
     - https://github.com/debezium/debezium-platform/releases/download/v3.1.0.Beta1/debezium-platform-3.1.0-beta1.tgz
     version: 3.1.0-beta1
-generated: "2026-05-15T15:11:10.225721683-04:00"
+generated: "2026-05-30T02:08:03.506023295-04:00"
