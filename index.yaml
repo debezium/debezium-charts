@@ -26,6 +26,14 @@ entries:
     - https://github.com/debezium/debezium-operator/releases/download/v3.6.0.Alpha1/debezium-operator-3.6.0-alpha1.tgz
     version: 3.6.0-alpha1
   - apiVersion: v2
+    appVersion: 3.5.2
+    created: "2026-06-02T09:25:52.824349496-04:00"
+    digest: 8bf78bc14d647f4e457156544313d3938149bb94d63626f17ee0de62c675d72d
+    name: debezium-operator
+    urls:
+    - https://github.com/debezium/debezium-operator/releases/download/v3.5.2.Final/debezium-operator-3.5.2.tgz
+    version: 3.5.2
+  - apiVersion: v2
     appVersion: 3.5.1
     created: "2026-05-14T13:19:51.432856953-04:00"
     digest: b0a76627bedd1d48d7d9a935c0d62c3b1fc72b6f1fbc14e0a71bd9ab99d493fa
@@ -458,6 +466,30 @@ entries:
     urls:
     - https://github.com/debezium/debezium-platform/releases/download/v3.6.0.Alpha1/debezium-platform-3.6.0-alpha1.tgz
     version: 3.6.0-alpha1
+  - apiVersion: v2
+    appVersion: 3.5.2
+    created: "2026-06-02T09:25:53.394731817-04:00"
+    dependencies:
+    - condition: debezium-operator.enabled
+      name: debezium-operator
+      repository: https://charts.debezium.io
+      version: 3.5.2
+    - condition: database.enabled
+      name: database
+      repository: ""
+      version: 3.5.2
+    description: Debezium Platform
+    digest: b0f736c402eea17428ed967718021c3befdca72f1eefb3b910f67152c715af7f
+    home: https://github.com/debezium/debezium-platform
+    keywords:
+    - debezium
+    - cdc
+    name: debezium-platform
+    sources:
+    - https://github.com/debezium/debezium-platform
+    urls:
+    - https://github.com/debezium/debezium-platform/releases/download/v3.5.2.Final/debezium-platform-3.5.2.tgz
+    version: 3.5.2
   - apiVersion: v2
     appVersion: 3.5.1
     created: "2026-05-14T13:19:51.995018611-04:00"
@@ -1195,4 +1227,4 @@ entries:
     urls:
     - https://github.com/debezium/debezium-platform/releases/download/v3.1.0.Beta1/debezium-platform-3.1.0-beta1.tgz
     version: 3.1.0-beta1
-generated: "2026-05-30T02:08:03.506023295-04:00"
+generated: "2026-06-02T09:25:53.392882694-04:00"
