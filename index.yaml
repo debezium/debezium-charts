@@ -18,6 +18,14 @@ entries:
     - https://github.com/debezium/debezium-operator/releases/download/v3.7.0.Alpha2/debezium-operator-3.7.0-alpha2.tgz
     version: 3.7.0-alpha2
   - apiVersion: v2
+    appVersion: 3.6.2
+    created: "2026-09-01T13:10:26.115674783Z"
+    digest: b7a32ad0142b794e3e658c1cbc0dc587ad87def49c53590699b445d35487a695
+    name: debezium-operator
+    urls:
+    - https://github.com/debezium/debezium-operator/releases/download/v3.6.2.Final/debezium-operator-3.6.2.tgz
+    version: 3.6.2
+  - apiVersion: v2
     appVersion: 3.6.0
     created: "2026-07-02T03:10:15.932858502-04:00"
     digest: f7e567f73e4b8ea667a45ac3444bc29a8dac2a74c7c427d05892b19e6c3a2339
@@ -482,6 +490,30 @@ entries:
     urls:
     - https://github.com/debezium/debezium-platform/releases/download/v3.7.0.Alpha2/debezium-platform-3.7.0-alpha2.tgz
     version: 3.7.0-alpha2
+  - apiVersion: v2
+    appVersion: 3.6.2
+    created: "2026-09-01T13:10:26.730108869Z"
+    dependencies:
+    - condition: debezium-operator.enabled
+      name: debezium-operator
+      repository: https://charts.debezium.io
+      version: 3.6.2
+    - condition: database.enabled
+      name: database
+      repository: ""
+      version: 3.6.2
+    description: Debezium Platform
+    digest: 91055f67b2a799ba47b2095d6172c6b0727aedcd2a8bd5404423561c430ad2d0
+    home: https://github.com/debezium/debezium-platform
+    keywords:
+    - debezium
+    - cdc
+    name: debezium-platform
+    sources:
+    - https://github.com/debezium/debezium-platform
+    urls:
+    - https://github.com/debezium/debezium-platform/releases/download/v3.6.2.Final/debezium-platform-3.6.2.tgz
+    version: 3.6.2
   - apiVersion: v2
     appVersion: 3.6.0
     created: "2026-07-02T03:10:16.491493023-04:00"
@@ -1387,4 +1419,4 @@ entries:
     urls:
     - https://github.com/debezium/debezium-platform/releases/download/v3.1.0.Beta1/debezium-platform-3.1.0-beta1.tgz
     version: 3.1.0-beta1
-generated: "2026-08-26T11:48:44.119127943Z"
+generated: "2026-09-01T13:10:26.725861515Z"
